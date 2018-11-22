@@ -1,0 +1,14 @@
+server:
+  port: 9000
+dubbo:
+  application:
+    name: dubbo-provider
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  provider:
+    timeout: 10000
+  scan:
+    base-packages: com.springboot.dubbo.springbootprovider
